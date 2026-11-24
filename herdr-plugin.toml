@@ -1,0 +1,13 @@
+id = "last-reply"
+name = "Last reply"
+version = "0.2.0"
+min_herdr_version = "0.9.5"
+description = "Show the time of each agent's last reply as a $last token in the Agents list"
+platforms = ["linux", "macos"]
+
+[[startup]]
+command = ["python3", "-I", "last_reply.py"]
+
+[[events]]
+on = "pane.agent_status_changed"
+command = ["python3", "-I", "last_reply.py"]
