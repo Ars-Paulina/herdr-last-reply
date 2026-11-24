@@ -64,3 +64,7 @@ Then remove the `$last` entries from your `config.toml`.
 ## Development
 
 Self-check: `python3 last_reply.py --test`.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
